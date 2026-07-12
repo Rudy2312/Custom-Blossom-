@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover" />
+    <meta name="description" content="Custom Blossom - Craft Your Creativity. Personalize tech accessories with hyper-realistic previews." />
+    <meta name="theme-color" content="#F8C8DC" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <title>Custom Blossom – Craft Your Creativity</title>
+
+    <!-- Performance: Preconnect to CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://www.gstatic.com" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css?v=2.7.1" />
+
+</head>
+<body>
+    <div id="root">
+        <!-- Fallback loading state before React mounts -->
+        <div style="display:flex; justify-content:center; align-items:center; height:100vh; font-family:sans-serif; flex-direction:column; background:#050506; color:#f472b6; text-align:center;">
+            <div style="font-size:24px; font-weight:bold; margin-bottom:12px; font-family:'Montserrat',sans-serif; letter-spacing:0.04em;">Loading Custom Blossom...</div>
+            <div style="font-size:14px; opacity:0.7; color:rgba(255,255,255,0.6);">Crafting your creative experience</div>
+        </div>
+    </div>
+
+    <!-- Core Dependencies -->
+    <!-- Scripts are intentionally placed at the end of the body sequentially without 'defer' -->
+    <!-- This guarantees strict synchronous execution order to prevent Babel race conditions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Firebase SDK (Compat Mode for Legacy Support) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <!-- JSX Transpiler for Static In-Browser Compilation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+
+    <!-- Main App Logic -->
+    <script type="text/babel" data-presets="react" src="./script.js?v=2.7.1"></script>
+</body>
+</html>
